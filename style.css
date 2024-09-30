@@ -703,15 +703,55 @@ ion-icon{
 }
 
 .contactuspage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 700px;
 }
 
 .contactname {
+    font-family: 'Poppins';
     color: rgb(212, 72, 72);
     text-align: center;
     font-size: 4vw;
     font-weight: 600;
     margin-bottom: 50px;
+}
+
+#fn{
+    font-family: 'Poppins';
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: large;
+}
+#ln{
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: large;
+    margin-left: 2px;
+    font-family: 'Poppins';
+}
+#mailclas{
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: large;
+    font-family: 'Poppins';
+    
+}
+#mesa{
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: large;
+    font-family: 'Poppins';
+    
 }
 
 .topicon {
@@ -733,7 +773,7 @@ label {
 }
 
 .feedimage {
-    display: flex;
+    margin-right: 20px;
     background-image: url(./Data/extras/Feedback.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -766,23 +806,33 @@ label {
 }
 
 .submit-button {
+    font-family: 'Poppins';
     width: 100px;
     height: 30px;
     margin-top: 30px;
     margin-left: 20px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1vw;
-    color: black;
-    background-color: yellow;
-    border: 2px solid red;
+    color: #FFFFFF;
+    background-color: #ff3131;;
+}
+.submit-button:hover{
+    border: 1.5px solid  #fff;
+    color: #fff;
+}
+.button{
+    display: flex;
+    justify-content: center;
 }
 
 .email-class {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 #mailclas {
-    width: 628px;
+    width: 630px;
     height: 30px;
     margin-bottom: 10px;
 }
@@ -800,8 +850,9 @@ label {
 }
 
 .submit-button {
-    color: black;
     font-size: 15px;
+    border: none;
+    border-radius: 10px;
 }
 
 .action-genre {
@@ -1171,7 +1222,7 @@ p {
     animation: glow 1s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+  @webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 10px #ead948, 0 0 20px #b7b225;
     }
